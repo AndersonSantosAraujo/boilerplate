@@ -13,7 +13,8 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "yarn lint --fix", "yarn test --findRelatedTests --bail"
+      "yarn lint --fix",
+      "yarn test --findRelatedTests --passWithNoTests --bail"
     ]
   },
   "dependencies": {
@@ -21,15 +22,18 @@
     "@testing-library/react": "^14.0.0",
     "next": "14.0.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-components": "^6.1.0"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.23.2",
     "@types/jest": "^29.5.6",
     "@types/node": "20.8.9",
     "@types/react": "18.2.33",
+    "@types/styled-components": "^5.1.29",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
+    "babel-plugin-styled-components": "^2.1.4",
     "eslint": "^8.52.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
